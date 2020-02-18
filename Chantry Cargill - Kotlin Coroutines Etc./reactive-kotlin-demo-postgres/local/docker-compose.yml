@@ -1,0 +1,11 @@
+version: '2'
+services:
+  db:
+    image: postgres
+    ports:
+      - "5432"
+    environment:
+      POSTGRES_USER: username
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: demo
+    container_name: reactive-kotlin-demo-postgres

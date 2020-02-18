@@ -1,0 +1,15 @@
+server:
+  port: 8081
+db:
+  port: ${POSTGRES_PORT:5432}
+  host: ${POSTGRES_HOST:localhost}
+  user: ${POSTGRES_USER:username}
+  password: ${POSTGRES_PASS:password}
+spring:
+  flyway:
+    enabled: false
+  rsocket:
+    server:
+      mapping-path: /rsocket
+      transport: websocket
+      port: 8082
